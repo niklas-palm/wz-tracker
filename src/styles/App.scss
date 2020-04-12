@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  color: darkgray;
+
+  .title {
+    // margin-top: 4em;
+    font-variant: small-caps;
+  }
+}

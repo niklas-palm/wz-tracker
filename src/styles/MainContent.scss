@@ -1,0 +1,45 @@
+.Wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2em;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Card {
+    margin: 0.2em;
+    width: 80%;
+    max-width: 300px;
+    min-width: 275px;
+    background-color: steelblue;
+    color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+
+    .Table {
+      margin-top: -0.5em;
+      padding: 1em;
+      .Row {
+        display: flex;
+        flex-direction: row;
+        .Left {
+          flex: 1;
+
+          text-align: left;
+        }
+
+        .Right {
+          flex: 1;
+
+          text-align: right;
+        }
+      }
+    }
+  }
+}
